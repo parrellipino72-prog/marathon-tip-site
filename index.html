@@ -3,285 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MarathonTip | Pronostici Serie A, Tennis, NBA e Bonus Marathonbet.it | Licenza ADM</title>
+    <title>⚽ Pronostici Serie A | 9ª Giornata (29 Ottobre) | MarathonTip</title>
     
     <style>
-        /* Importazione Font Google per un look più moderno */
-        @import url('https://fonts.com/css2?family=Roboto:wght@400;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
-        /* Stili Generali */
+        :root {
+            --primary-color: #0d47a1; /* Blu Scuro */
+            --secondary-color: #1565c0; /* Blu Medio */
+            --accent-color: #ffc107; /* Giallo Acceso */
+            --text-light: #ffffff;
+            --shadow-light: rgba(0, 0, 0, 0.15);
+        }
+
         body {
             font-family: 'Roboto', Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #eef2f7; 
+            background-color: #f0f2f5;
             color: #333;
         }
 
-        /* Colori Ispirati a Marathonbet */
-        :root {
-            --primary-color: #0d47a1; 
-            --secondary-color: #1565c0; 
-            --accent-color: #ffc107; 
-            --casinò-color: #880e4f; 
-            --text-light: #ffffff;
-            --shadow-light: rgba(0, 0, 0, 0.1);
-            --sport-bonus-bg: #4caf50; 
-            --casino-bonus-bg: #e91e63;
-        }
-
-        /* Header e Navigazione */
         header {
             background-color: var(--primary-color);
             color: var(--text-light);
-            padding: 15px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 4px 6px var(--shadow-light);
-        }
-
-        .logo {
-            font-size: 2em;
-            font-weight: 900;
-            color: var(--accent-color);
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li a {
-            color: var(--text-light);
-            text-decoration: none;
-            padding: 10px 15px;
-            display: block;
-            transition: background-color 0.3s;
-            font-weight: 700;
-        }
-
-        nav ul li a:hover {
-            background-color: var(--secondary-color);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
-            color: var(--text-light);
-            text-align: center;
-            padding: 80px 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            font-weight: 900;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: #111;
-            padding: 18px 40px;
-            text-decoration: none;
-            font-weight: 900;
-            border-radius: 50px;
-            margin-top: 25px;
-            font-size: 1.2em;
-            transition: background-color 0.3s, transform 0.2s;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-        }
-
-        .cta-button:hover {
-            background-color: #ffeb3b;
-            transform: translateY(-2px);
-        }
-
-        .disclaimer-hero {
-            margin-top: 15px;
-            font-size: 0.9em;
-            opacity: 0.8;
-        }
-
-        /* Sezioni Contenuto Generiche */
-        main {
             padding: 20px 5%;
+            text-align: center;
+            box-shadow: 0 4px 8px var(--shadow-light);
         }
 
-        .content-section {
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            font-weight: 900;
+        }
+
+        header p {
+            font-size: 1.1em;
+            font-style: italic;
+        }
+
+        main {
+            padding: 30px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .match-schedule {
             background-color: var(--text-light);
             padding: 30px;
-            margin-bottom: 30px;
             border-radius: 10px;
             box-shadow: 0 2px 8px var(--shadow-light);
         }
 
-        .content-section h2 {
+        .schedule-title {
             color: var(--primary-color);
             border-bottom: 3px solid var(--accent-color);
             padding-bottom: 10px;
             margin-bottom: 25px;
-            font-weight: 700;
-        }
-        
-        /* Banner Simulati */
-        .banner-simulato {
+            font-size: 2em;
             text-align: center;
-            padding: 30px 20px;
-            margin: 30px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            font-weight: 700;
-            line-height: 1.4;
         }
 
-        .banner-sport {
-            background: linear-gradient(90deg, #d32f2f 0%, #ff5722 100%);
-            color: var(--text-light);
-        }
-        .banner-sport .promo-text { font-size: 1.8em; margin-bottom: 10px; }
-
-        .banner-casino {
-            background-color: #4a148c;
-            color: #fffde7;
-            border: 2px solid var(--accent-color);
-        }
-        .banner-casino .promo-text { font-size: 1.8em; margin-bottom: 10px; }
-
-        .banner-legal {
-            background-color: #e8f5e9;
-            color: #388e3c;
-            border: 1px solid #c8e6c9;
-            font-size: 1em;
-            padding: 15px;
-        }
-        
-        /* Stili Sezione Bonus */
-        .bonus-card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 20px;
-        }
-        
-        .bonus-card {
-            padding: 25px;
-            border-radius: 10px;
-            color: var(--text-light);
-            box-shadow: 0 4px 12px var(--shadow-light);
-            position: relative;
+        .match-group {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
             overflow: hidden;
         }
 
-        .bonus-card h3 {
-            font-size: 1.5em;
-            margin-top: 0;
-            font-weight: 900;
-            border-bottom: 2px dashed rgba(255, 255, 255, 0.3);
-            padding-bottom: 10px;
-            margin-bottom: 15px;
+        .group-header {
+            background-color: #e3f2fd; /* Azzurro chiaro */
+            color: var(--primary-color);
+            padding: 12px 20px;
+            font-size: 1.4em;
+            font-weight: 700;
         }
 
-        .bonus-card ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .bonus-card ul li {
-            margin-bottom: 8px;
-            font-size: 0.95em;
-        }
-        
-        .bonus-card .cta-bonus {
-            display: block;
-            background-color: var(--accent-color);
-            color: #111;
-            padding: 12px;
-            text-align: center;
-            text-decoration: none;
-            font-weight: 900;
-            border-radius: 5px;
-            margin-top: 20px;
+        .match-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
             transition: background-color 0.3s;
         }
 
-        .bonus-card .cta-bonus:hover {
-            background-color: #ffeb3b;
+        .match-item:last-child {
+            border-bottom: none;
         }
 
-        .bonus-sport {
-            background: linear-gradient(135deg, #1b5e20 0%, var(--sport-bonus-bg) 100%);
+        .match-item:hover {
+            background-color: #f9f9f9;
         }
 
-        .bonus-casino-main {
-            background: linear-gradient(135deg, #4a148c 0%, var(--casinò-color) 100%);
-        }
-
-        /* Stili Sezione Pronostici (Articoli) */
-        .pronostici {
-            border-top: 5px solid var(--primary-color);
-        }
-        .post {
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            background-color: #fcfcfc;
-            transition: box-shadow 0.3s;
-        }
-        .post:hover {
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .post h3 {
-            margin-top: 0;
-            color: var(--secondary-color);
-            font-size: 1.4em;
-            display: flex;
-            align-items: center;
-        }
-        .post h3 .icon {
-            font-size: 1.2em;
-            margin-right: 10px;
-        }
-
-        .post .tip-quote {
+        .team-names {
+            font-size: 1.1em;
             font-weight: 700;
-            color: #d84315; /* Rosso per le quote */
-            display: block;
-            margin: 10px 0;
-        }
-        .post .quote-details {
-            font-size: 0.9em;
-            color: #555;
-            margin-top: 5px;
-            padding-left: 5px;
-            border-left: 3px solid var(--accent-color);
-        }
-        .read-more {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 10px;
-            border-bottom: 1px solid var(--primary-color);
+            flex-grow: 1;
         }
 
-        /* Footer Legale (Mantenuto) */
+        .kickoff-time {
+            font-weight: 400;
+            color: #777;
+            width: 80px;
+            text-align: right;
+        }
+
+        .analysis-link a {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 700;
+            transition: background-color 0.3s;
+            margin-left: 20px;
+        }
+
+        .analysis-link a:hover {
+            background-color: var(--secondary-color);
+        }
+        
         footer {
             background-color: #222;
             color: #ccc;
             text-align: center;
             padding: 30px 5%;
             font-size: 0.85em;
+            margin-top: 50px;
         }
+
         .legal-info {
             color: #f44336;
             font-weight: bold;
@@ -290,149 +143,80 @@
             border-top: 1px solid #444;
         }
     </style>
-    </head>
+</head>
 <body>
 
     <header>
-        <div class="logo">M-TIP</div>
-        <nav>
-            <ul>
-                <li><a href="#recensione">Recensione</a></li>
-                <li><a href="#bonus">Bonus</a></li>
-                <li><a href="#sport">Sport Tip</a></li>
-                <li><a href="#casino">Slot & Casinò</a></li>
-            </ul>
-        </nav>
+        <h1>MarathonTip - Pronostici Serie A</h1>
+        <p>Analisi dettagliate e i nostri codici vincenti per la 9ª Giornata!</p>
     </header>
 
     <main>
-        <section class="hero">
-            <h1>ENTRA NELLA PARTITA! Le migliori quote Marathonbet ti aspettano!</h1>
-            <p>Analisi aggiornate, pronostici vincenti e il Bonus di Benvenuto più generoso del mercato.</p>
-            <a href="https://www.marathonbet.it/registrazione" class="cta-button" target="_blank">⚽ REGISTRATI & OTTIENI IL BONUS SPORT!</a>
-            <p class="disclaimer-hero">18+ | Si applicano Termini e Condizioni. Gioca Responsabilmente.</p>
-        </section>
+        <div class="match-schedule">
+            <h2 class="schedule-title">📅 Partite del Mercoledì, 29 Ottobre 2025</h2>
 
-        <div class="banner-simulato banner-sport">
-            <div class="promo-text">🔥 QUOTE MAGGIORATE OGNI GIORNO! 🔥</div>
-            <div class="sub-text">Non perdere le nostre selezioni Top sul calcio. Solo per i nuovi iscritti!</div>
-            <a href="https://www.marathonbet.it/promotions" class="cta-button" target="_blank" style="background-color: var(--text-light); color: #d32f2f; margin-top: 15px;">VAI ALLA PROMOZIONE</a>
-        </div>
-
-        <section id="sport" class="content-section pronostici">
-            <h2>🎯 I Nostri Tip per le Scommesse di OGGI (28 Ottobre 2025)</h2>
-            <p>Analisi approfondite e suggerimenti mirati basati sulle quote Marathonbet. **Ricorda: le quote sono soggette a variazioni.**</p>
-            
-            <article class="post">
-                <h3><span class="icon">⚽</span> Serie A: Lecce vs. Napoli</h3>
-                <p>Il Napoli non può permettersi passi falsi. Nonostante il Lecce sia tenace in casa, la superiorità tecnica del Napoli dovrebbe prevalere, ma potrebbe non essere una goleada.</p>
-                <span class="tip-quote">🔥 Il Nostro Tip: **Over 2.5 (Quota: 1.68)**</span>
-                <div class="quote-details">Quote 1X2: 6.40 (Lecce) | 4.00 (Pareggio) | 1.56 (Napoli)</div>
-                <a href="analisi-partita.html" class="read-more">Analisi completa e statistiche</a>
-            </article>
-
-            <article class="post">
-    <h3><span class="icon">⚽</span> Serie A: Atalanta vs. Milan (Big Match)</h3>
-    <p>Lo scontro diretto più atteso della giornata. L'Atalanta è forte fisicamente, il Milan punta sulla velocità. Prevediamo una partita equilibrata dove entrambe le squadre cercheranno il gol.</p>
-    <span class="tip-quote">🔥 Il Nostro Tip: **Goal/Goal (Quota simulata: 1.75)**</span>
-    <div class="quote-details">Quote 1X2: 2.60 (Atalanta) | 3.35 (Pareggio) | 2.70 (Milan)</div>
-    <a href="analisi-atalanta-milan.html" class="read-more">Analisi completa e statistiche</a> 
-</article>
-
-            <article class="post">
-                <h3><span class="icon">🎾</span> Tennis: Etcheverry Tomas Martin vs. Ugo Carabelli Camilo</h3>
-                <p>Etcheverry parte nettamente favorito in questo match. Per una quota più interessante, puntiamo sul divario in termini di games. Etcheverry dovrebbe chiudere in due set rapidi.</p>
-                <span class="tip-quote">🔥 Il Nostro Tip: **Totale Games Under 21.5 (Quota: 1.75)**</span>
-                <div class="quote-details">Quote Vittoria: 1.17 (Etcheverry) | 4.90 (Carabelli)</div>
-                <a href="#sport" class="read-more">Analisi del tabellone e quote singole (Prossimamente)</a>
-            </article>
-
-            <article class="post">
-                <h3><span class="icon">🎾</span> Tennis: Munar Jaume vs. Medvedev Daniil</h3>
-                <p>Medvedev, un top player, affronterà un avversario non al suo livello. Ci si aspetta una vittoria netta del russo senza concedere troppi game. L'handicap è la scelta ideale.</p>
-                <span class="tip-quote">🔥 Il Nostro Tip: **Medvedev Handicap Games -3.5 (Quota: 1.78)**</span>
-                <div class="quote-details">Quote Vittoria: 3.00 (Munar) | 1.38 (Medvedev)</div>
-                <a href="#sport" class="read-more">Statistiche head-to-head (Prossimamente)</a>
-            </article>
-            
-        </section>
-        
-        <section id="casino" class="content-section casino-section">
-            <h2>♠️ La Sezione Casinò: Slot, Live e Jackpot</h2>
-            <p>Marathonbet non è solo sport. Troverai centinaia di Slot con Jackpot e un Casinò Live mozzafiato.</p>
-            <div class="casino-grid">
-                <div><span class="icon-slot">🍒</span> Slot Machine (Drops & Wins)</div>
-                <div><span class="icon-slot">🎲</span> Tavoli Live (Blackjack, Roulette)</div>
-                <div><span class="icon-slot">💰</span> Jackpot (Progressivi)</div>
-                <div><span class="icon-slot">🚀</span> Crash Games (Nuovi e veloci)</div>
-            </div>
-            
-            <div class="banner-simulato banner-casino">
-                <div class="promo-text">🎰 NUOVE SLOT! 100% SUL PRIMO DEPOSITO FINO A 2000€! 🎰</div>
-                <div class="sub-text">Gira, vinci e divertiti con le migliori slot in circolazione.</div>
-                <a href="https://www.marathonbet.it/registrazione" class="cta-button" target="_blank" style="background-color: var(--accent-color); color: #4a148c; margin-top: 15px;">GIOCA ORA</a>
-            </div>
-        </section>
-
-        <section id="bonus" class="content-section">
-            <h2>🏆 I Bonus di Benvenuto Ufficiali Marathonbet.it</h2>
-            <p>Scegli l'offerta che fa per te! Entrambi i bonus sono validi per i nuovi utenti con conto convalidato (invio documento).</p>
-
-            <div class="bonus-card-grid">
-                <div class="bonus-card bonus-sport">
-                    <h3>BONUS SPORT: Fino a 350€!</h3>
-                    <p>Il bonus si divide in Fun Bonus sul primo deposito e Cashback settimanale.</p>
-                    <ul>
-                        <li>**100% Fun Bonus fino a 100€:** sul 1° deposito (min. 10€).</li>
-                        <li>**Cashback fino a 250€:** 25% della spesa settimanale (max 50€/settimana per 5 settimane).</li>
-                        <li>**Requisito Fun Bonus:** Giocare 5x su Multiple con min. 4 eventi (quota singola 1.40+).</li>
-                    </ul>
-                    <a href="https://www.marathonbet.it/promotions" class="cta-bonus" target="_blank">ATTIVA IL BONUS SPORT</a>
+            <div class="match-group">
+                <div class="group-header">Inizio ore 18:30</div>
+                
+                <div class="match-item">
+                    <span class="team-names">Como 1907 vs. Hellas Verona</span>
+                    <span class="kickoff-time">18:30</span>
+                    <span class="analysis-link">
+                        <a href="como-verona.html">Analisi & Pronostico</a>
+                    </span>
+                </div>
+                
+                <div class="match-item">
+                    <span class="team-names">Juventus vs. Udinese Calcio</span>
+                    <span class="kickoff-time">18:30</span>
+                    <span class="analysis-link">
+                        <a href="juventus-udinese.html">Analisi & Pronostico</a>
+                    </span>
                 </div>
 
-                <div class="bonus-card bonus-casino-main">
-                    <h3>BONUS CASINÒ: Fino a 2000€!</h3>
-                    <p>Il bonus è erogato come Real Bonus progressivo sulle slot selezionate.</p>
-                    <ul>
-                        <li>**100% Real Bonus fino a 2000€:** sul primo deposito.</li>
-                        <li>**Sblocco:** Rilasciato progressivamente (es. 10€ di Real Bonus ogni 450€ giocati).</li>
-                        <li>**Codice Promo:** Spesso richiesto in fase di deposito (WCASINO***).</li>
-                    </ul>
-                    <a href="https://www.marathonbet.it/promotions" class="cta-bonus" target="_blank">ATTIVA IL BONUS CASINÒ</a>
+                <div class="match-item">
+                    <span class="team-names">AS Roma vs. Parma Calcio 1913</span>
+                    <span class="kickoff-time">18:30</span>
+                    <span class="analysis-link">
+                        <a href="roma-parma.html">Analisi & Pronostico</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="match-group">
+                <div class="group-header">Inizio ore 20:45</div>
+                
+                <div class="match-item">
+                    <span class="team-names">Bologna FC 1909 vs. Torino FC</span>
+                    <span class="kickoff-time">20:45</span>
+                    <span class="analysis-link">
+                        <a href="bologna-torino.html">Analisi & Pronostico</a>
+                    </span>
+                </div>
+                
+                <div class="match-item">
+                    <span class="team-names">Genoa CFC vs. US Cremonese</span>
+                    <span class="kickoff-time">20:45</span>
+                    <span class="analysis-link">
+                        <a href="genoa-cremonese.html">Analisi & Pronostico</a>
+                    </span>
+                </div>
+
+                <div class="match-item">
+                    <span class="team-names">Inter vs. ACF Fiorentina</span>
+                    <span class="kickoff-time">20:45</span>
+                    <span class="analysis-link">
+                        <a href="inter-fiorentina.html">Analisi & Pronostico</a>
+                    </span>
                 </div>
             </div>
             
-        </section>
-
-        <section id="recensione" class="content-section review">
-            <h2>🥇 Perchè Scegliere Marathonbet (Licenza ADM 15002)</h2>
-            <p>Affidabilità storica e un'offerta imbattibile sia per lo sport che per i giochi da casinò online.</p>
-            <div class="features">
-                <div><span class="icon">✅</span> Licenza ADM 15002 (Massima sicurezza)</div>
-                <div><span class="icon">📈</span> Quote Sportive al Top del Mercato</div>
-                <div><span class="icon">🎰</span> Oltre 2000 Slot, tavoli Live e Crash Games</div>
-                <div><span class="icon">📞</span> Assistenza Clienti 24/7 (Live Chat e Telefono)</div>
-            </div>
-            <a href="PAGINA_RECENSIONE_COMPLETA.html" class="link-dettagli">🔎 Leggi la nostra Recensione Completa e Dettagliata</a>
-        </section>
-        
-        <div class="banner-simulato banner-legal">
-            <div class="promo-text">✅ SICUREZZA GARANTITA: MARATHONBET È LEGALE E CON LICENZA ADM</div>
-            <div class="sub-text">Tranquillità nel gioco e transazioni protette.</div>
         </div>
-
     </main>
 
     <footer>
         <div class="legal-info">
             <p>⚠️ **GIOCA RESPONSABILMENTE: Il gioco è vietato ai minori di 18 anni e può causare dipendenza patologica.**</p>
-            <p>Se hai problemi con il gioco, contatta il numero verde gratuito 800.558.822.</p>
-            <p>Questo sito è un affiliato promozionale e non è l'operatore di gioco. I servizi sono offerti da Marathonbet.it (Licenza ADM 15002).</p>
-        </div>
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a> |
-            <a href="#">Contatti</a> |
-            <a href="#">Termini e Condizioni</a>
         </div>
         <p>&copy; 2025 MarathonTip. Tutti i diritti riservati.</p>
     </footer>
