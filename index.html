@@ -120,19 +120,35 @@
             margin-bottom: 15px;
         }
 
-        .read-more {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: var(--text-light);
-            padding: 8px 15px;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: 700;
-            transition: background-color 0.3s;
+        /* Nuovo Stile per i Dettagli */
+        .post details {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px dashed #ccc;
         }
 
-        .read-more:hover {
-            background-color: var(--secondary-color);
+        .post summary {
+            font-weight: 900;
+            color: var(--primary-color);
+            cursor: pointer;
+            padding: 5px 0;
+        }
+
+        .analysis-body {
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 3px solid var(--secondary-color);
+            margin-top: 10px;
+        }
+
+        .analysis-body ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        .read-more {
+            /* Rimosso, ora usiamo details/summary */
+            display: none; 
         }
         
         /* Stili Casino/Bonus */
@@ -256,88 +272,318 @@
         </div>
         
         <section id="sport" class="content-section sport-section">
-            <h2>⚽ Pronostici Calcio e Sport del Giorno </h2>
-<article class="post">
-    <h3><span class="icon">🎾</span> ATP Parigi: Cerundolo vs. Sinner (Netta Favorita)</h3>
-    <p>Sinner è uno dei giocatori più in forma del circuito. Il divario tecnico e di classifica con Cerundolo in un torneo indoor come Parigi è abissale. Ci aspettiamo una vittoria rapida e senza storia dell'italiano, che non dovrebbe concedere più di 6 games in totale.</p>
-    <span class="tip-quote">🔥 Il Nostro Tip: **Sinner Handicap Games -6.5 (Quota: 1.69)**</span>
-    <div class="quote-details">Quote Vittoria: 11.00 (Cerundolo) | 1.03 (Sinner)</div>
-    <a href="analisi-sinner-parigi.html" class="read-more">Analisi completa e statistiche</a> 
-</article>
+            <h2>⚽ Pronostici Calcio e Tennis del Giorno (ATP Parigi e Coppe)</h2>
 
-<article class="post">
-    <h3><span class="icon">🎾</span> ATP Parigi: Sonego vs. Medvedev (Test Difficile)</h3>
-    <p>Medvedev ha sempre espresso il suo miglior tennis sui campi veloci indoor. Sonego è combattivo, ma la regolarità e la potenza del russo sono su un altro livello. L'handicap Games è alto, ma pienamente giustificato dalla differenza di rendimento su questa superficie.</p>
-    <span class="tip-quote">🔥 Il Nostro Tip: **Medvedev Handicap Games -3.5 (Quota: 2.00)**</span>
-    <div class="quote-details">Quote Vittoria: 3.65 (Sonego) | 1.27 (Medvedev)</div>
-    <a href="analisi-medvedev-sonego.html" class="read-more">Analisi completa e statistiche</a>
-</article>
-
-<article class="post">
-    <h3><span class="icon">🎾</span> ATP Parigi: Shelton vs. Rublev (Potenza vs. Regolarità)</h3>
-    <p>Shelton è in crescita ma è ancora incostante. Rublev, pur non essendo al livello di Sinner/Medvedev, ha un gioco solido e aggressivo. Prevediamo una vittoria di Rublev, magari in tre set, ma con il russo che vince complessivamente per almeno 2 giochi di scarto.</p>
-    <span class="tip-quote">🔥 Il Nostro Tip: **Rublev Handicap Games -1.5 (Quota: 1.87)**</span>
-    <div class="quote-details">Quote Vittoria: 2.15 (Shelton) | 1.68 (Rublev)</div>
-    <a href="analisi-rublev-shelton.html" class="read-more">Analisi completa e statistiche</a>
-</article>
-
-<article class="post">
-    <h3><span class="icon">🇮🇹</span> Serie A: Cagliari vs. Sassuolo (Gol Assicurati)</h3>
-    <p>Il Cagliari di Ranieri cerca punti salvezza con grande grinta, ma subisce molto. Il Sassuolo è squadra da Over, con un attacco dinamico ma una difesa che spesso si distrae. Entrambe hanno la necessità di segnare. La quota per l'Over 2.5 è molto interessante.</p>
-    <span class="tip-quote">🔥 Il Nostro Tip: **Over 2.5 Goal (Quota: 2.12)**</span>
-    <div class="quote-details">Quote 1X2: 2.57 (Cagliari) | 3.00 (Pareggio) | 3.05 (Sassuolo)</div>
-    <a href="analisi-cagliari-sassuolo.html" class="read-more">Analisi completa e statistiche</a>
-</article>
-
-<article class="post">
-    <h3><span class="icon">⚽</span> Coppa Italia: Pisa vs. Lazio (La Prova del Nove)</h3>
-    <p>Nonostante si giochi in trasferta e in Coppa, la Lazio di Sarri deve dimostrare di aver superato il recente periodo di crisi. Il Pisa è una squadra ostica ma il gap tecnico è notevole. La quota per la vittoria secca della Lazio è alta e vale il rischio.</p>
-    <span class="tip-quote">🔥 Il Nostro Tip: **Vittoria Lazio (2) (Quota: 2.16)**</span>
-    <div class="quote-details">Quote 1X2: 3.75 (Pisa) | 3.12 (Pareggio) | 2.16 (Lazio)</div>
-    <a href="analisi-pisa-lazio.html" class="read-more">Analisi completa e statistiche</a>
-</article>
-
-<article class="post">
-    <h3><span class="icon">🌎</span> Sudamericana: Lanus vs. U. De Chile (Fattore Campo)</h3>
-    <p>Nelle competizioni CONMEBOL, il fattore campo è spesso decisivo, specialmente per le squadre argentine. Il Lanus è solido in casa e ha l'esperienza necessaria per gestire queste partite. L'Universidad de Chile non ha un buon rendimento esterno.</p>
-    <span class="tip-quote">🔥 Il Nostro Tip: **Vittoria Atletico Lanus (1) (Quota: 1.76)**</span>
-    <div class="quote-details">Quote 1X2: 1.76 (Lanus) | 3.35 (Pareggio) | 4.60 (U. Chile)</div>
-    <a href="analisi-lanus-uchile.html" class="read-more">Analisi completa e statistiche</a>
-</article>
-
-<article class="post">
-    <h3><span class="icon">🇩🇰</span> Coppa Danimarca: Nordsjaelland vs. Brøndby (Derby di Coppa)</h3>
-    <p>Scontro tra due squadre storicamente orientate all'attacco. Entrambe giocano un calcio veloce e non badano troppo alla fase difensiva. In Coppa, la pressione per vincere è alta, favorendo un match aperto con gol da entrambe le parti.</p>
-    <span class="tip-quote">🔥 Il Nostro Tip: **Goal/Goal (Quota: 1.52)**</span>
-    <div class="quote-details">Quote 1X2: 2.70 (Nordsj.) | 3.55 (Pareggio) | 2.29 (Brøndby)</div>
-    <a href="analisi-danimarca-coppa.html" class="read-more">Analisi completa e statistiche</a>
-</article>
-
-<article class="post">
-    <h3><span class="icon">🇨🇭</span> Superliga: Grasshoppers vs. Young Boys (Tendenza Over)</h3>
-    <p>Il Young Boys è la squadra più prolifica del campionato svizzero, ma subisce spesso in trasferta. Il Grasshoppers è meno regolare ma ha buone percentuali realizzative in casa. La media gol in Svizzera è alta, rendendo l'Over 2.5 la scelta più sicura.</p>
-    <span class="tip-quote">🔥 Il Nostro Tip: **Over 2.5 Goal (Quota: 1.60)**</span>
-    <div class="quote-details">Quote 1X2: 3.35 (Grassh.) | 3.70 (Pareggio) | 1.96 (Y. Boys)</div>
-    <a href="analisi-svizzera-yb.html" class="read-more">Analisi completa e statistiche</a>
-</article>
-
-<article class="post">
-    <h3><span class="icon">🇧🇪</span> Coppa Belgio: Beerschot vs. Westerlo (Sfida da Gol)</h3>
-    <p>Il calcio belga, specialmente nelle coppe, è famoso per le sue partite aperte. Il Westerlo (squadra di categoria superiore) ha un buon attacco. Il Beerschot in casa vuole fare bella figura. Entrambe le squadre segneranno, superando i 2.5 gol totali.</p>
-    <span class="tip-quote">🔥 Il Nostro Tip: **Goal/Goal e Over 2.5 (Quota: 1.51)**</span>
-    <div class="quote-details">Quote 1X2: 3.45 (Beerschot) | 3.60 (Pareggio) | 1.82 (Westerlo)</div>
-    <a href="analisi-belgio-westerlo.html" class="read-more">Analisi completa e statistiche</a>
-</article>
-
-<article class="post">
-    <h3><span class="icon">🟢⚫</span> Coppa Belgio: Cercle Brugge vs. Kortrijk (Cercle Fav.)</h3>
-    <p>Il Cercle Brugge ha dimostrato una maggiore solidità e organizzazione rispetto al Kortrijk in questa stagione. Giocando in casa, hanno il vantaggio di poter controllare il ritmo della partita. Il Kortrijk è in un momento di difficoltà che difficilmente potrà superare in Coppa.</p>
-    <span class="tip-quote">🔥 Il Nostro Tip: **Vittoria Cercle Brugge (1) (Quota: 1.67)**</span>
-    <div class="quote-details">Quote 1X2: 1.67 (Cercle B.) | 3.60 (Pareggio) | 4.10 (Kortrijk)</div>
-    <a href="analisi-brugge-kortrijk.html" class="read-more">Analisi completa e statistiche</a>
-</article>
             <article class="post">
+                <h3><span class="icon">🎾</span> ATP Parigi: Cerundolo vs. Sinner (Netta Favorita)</h3>
+                <p>Sinner è uno dei giocatori più in forma del circuito. Il divario tecnico e di classifica con Cerundolo in un torneo indoor come Parigi è abissale. Ci aspettiamo una vittoria rapida e senza storia dell'italiano, che non dovrebbe concedere più di 6 games in totale.</p>
+                <span class="tip-quote">🔥 Il Nostro Tip: **Sinner Handicap Games -6.5 (Quota: 1.69)**</span>
+                <div class="quote-details">Quote Vittoria: 11.00 (Cerundolo) | 1.03 (Sinner)</div>
                 
+                <details>
+                    <summary>Analisi Completa e Statistiche</summary>
+                    <div class="analysis-body">
+                        <h4>🎾 Analisi Match: Cerundolo vs. Sinner</h4>
+                        <p><strong>MATCH:</strong> Cerundolo F. vs Sinner J. | <strong>TORNEO:</strong> ATP Masters 1000 Parigi Bercy | <strong>DATA:</strong> Giovedì 30 Ottobre</p>
+                        
+                        <h3>📊 Stato di Forma e Superficie</h3>
+                        <ul>
+                            <li>**Jannik Sinner:** L'italiano arriva in grande spolvero. La superficie veloce indoor di Parigi è ideale per il suo gioco potente e aggressivo. La sua forma fisica è al top, e la concentrazione per chiudere la stagione con un altro successo è massima.</li>
+                            <li>**Francisco Cerundolo:** L'argentino è un giocatore principalmente da terra battuta. La superficie veloce indoor lo penalizza pesantemente, limitando l'efficacia del suo topspin.</li>
+                        </ul>
+
+                        <h3>🔑 Punti Chiave del Match</h3>
+                        <ol>
+                            <li>**Divario Tecnico:** Sinner è un Top 5 mondiale, Cerundolo fatica contro i primi 20 su superfici non lente.</li>
+                            <li>**Superficie:** L'indoor veloce esalta il servizio e il dritto piatto di Sinner.</li>
+                            <li>**Pronostico:** L'Handicap Games -6.5 è altamente probabile (es. 6-3, 6-2 o migliore).</li>
+                        </ol>
+                        <a href="https://www.marathonbet.it/registrazione" class="cta-button" target="_blank" style="background-color: var(--secondary-color); color: white; margin-top: 10px;">
+                            Vedi tutte le Quote Sinner su Marathonbet
+                        </a>
+                    </div>
+                </details>
+            </article>
+
+            <article class="post">
+                <h3><span class="icon">🎾</span> ATP Parigi: Sonego vs. Medvedev (Test Difficile)</h3>
+                <p>Medvedev ha sempre espresso il suo miglior tennis sui campi veloci indoor. Sonego è combattivo, ma la regolarità e la potenza del russo sono su un altro livello. L'handicap Games è alto, ma pienamente giustificato dalla differenza di rendimento su questa superficie.</p>
+                <span class="tip-quote">🔥 Il Nostro Tip: **Medvedev Handicap Games -3.5 (Quota: 2.00)**</span>
+                <div class="quote-details">Quote Vittoria: 3.65 (Sonego) | 1.27 (Medvedev)</div>
+                
+                <details>
+                    <summary>Analisi Completa e Statistiche</summary>
+                    <div class="analysis-body">
+                        <h4>🎾 Analisi Match: Sonego vs. Medvedev</h4>
+                        <p><strong>MATCH:</strong> Sonego L. vs Medvedev D. | <strong>TORNEO:</strong> ATP Masters 1000 Parigi Bercy | <strong>DATA:</strong> Giovedì 30 Ottobre</p>
+                        
+                        <h3>📊 Stato di Forma e Superficie</h3>
+                        <ul>
+                            <li>**Daniil Medvedev:** Specialista assoluto delle superfici veloci indoor. Il suo gioco difensivo piatto è massimamente efficace.</li>
+                            <li>**Lorenzo Sonego:** Può esprimere un buon tennis indoor ma la sua incostanza al servizio e la pressione di Medvedev potrebbero essere fatali.</li>
+                        </ul>
+
+                        <h3>🔑 Punti Chiave del Match</h3>
+                        <ol>
+                            <li>**Regolarità:** Il russo è una macchina da fondo campo, costringendo Sonego a rischiare continuamente.</li>
+                            <li>**Differenza Indoor:** Medvedev eccelle dove Sonego è solo buono.</li>
+                            <li>**Pronostico:** Prevediamo una netta superiorità in due set (es. 6-4, 6-3).</li>
+                        </ol>
+                        <a href="https://www.marathonbet.it/registrazione" class="cta-button" target="_blank" style="background-color: var(--secondary-color); color: white; margin-top: 10px;">
+                            Vedi tutte le Quote ATP su Marathonbet
+                        </a>
+                    </div>
+                </details>
+            </article>
+
+            <article class="post">
+                <h3><span class="icon">🎾</span> ATP Parigi: Shelton vs. Rublev (Potenza vs. Regolarità)</h3>
+                <p>Shelton è in crescita ma è ancora incostante. Rublev ha un gioco solido e aggressivo. Prevediamo una vittoria di Rublev, magari in tre set, ma con il russo che vince complessivamente per almeno 2 giochi di scarto.</p>
+                <span class="tip-quote">🔥 Il Nostro Tip: **Rublev Handicap Games -1.5 (Quota: 1.87)**</span>
+                <div class="quote-details">Quote Vittoria: 2.15 (Shelton) | 1.68 (Rublev)</div>
+                
+                <details>
+                    <summary>Analisi Completa e Statistiche</summary>
+                    <div class="analysis-body">
+                        <h4>🎾 Analisi Match: Shelton vs. Rublev</h4>
+                        <p><strong>MATCH:</strong> Shelton B. vs Rublev A. | <strong>TORNEO:</strong> ATP Masters 1000 Parigi Bercy | <strong>DATA:</strong> Giovedì 30 Ottobre</p>
+                        
+                        <h3>📊 Stato di Forma e Superficie</h3>
+                        <ul>
+                            <li>**Andrey Rublev:** Solido e aggressivo, la sua esperienza nei Masters 1000 è un fattore chiave.</li>
+                            <li>**Ben Shelton:** Forte del suo servizio, ma incostante nei momenti cruciali. Tende a concedere errori sotto pressione.</li>
+                        </ul>
+
+                        <h3>🔑 Punti Chiave del Match</h3>
+                        <ol>
+                            <li>**Consistenza di Rublev:** Più affidabile su due o tre set rispetto al giovane americano.</li>
+                            <li>**Pressione:** Rublev è più abituato a gestire le fasi avanzate di un torneo importante.</li>
+                            <li>**Pronostico:** Vittoria combattuta di Rublev (es. 7-6, 4-6, 6-4).</li>
+                        </ol>
+                        <a href="https://www.marathonbet.it/registrazione" class="cta-button" target="_blank" style="background-color: var(--secondary-color); color: white; margin-top: 10px;">
+                            Vedi tutte le Quote ATP su Marathonbet
+                        </a>
+                    </div>
+                </details>
+            </article>
+
+            <article class="post">
+                <h3><span class="icon">🇮🇹</span> Serie A: Cagliari vs. Sassuolo (Gol Assicurati)</h3>
+                <p>Il Cagliari di Ranieri cerca punti salvezza, ma subisce molto. Il Sassuolo è squadra da Over, con un attacco dinamico ma una difesa che spesso si distrae. Entrambe hanno la necessità di segnare. La quota per l'Over 2.5 è molto interessante.</p>
+                <span class="tip-quote">🔥 Il Nostro Tip: **Over 2.5 Goal (Quota: 2.12)**</span>
+                <div class="quote-details">Quote 1X2: 2.57 (Cagliari) | 3.00 (Pareggio) | 3.05 (Sassuolo)</div>
+                
+                <details>
+                    <summary>Analisi Completa e Statistiche</summary>
+                    <div class="analysis-body">
+                        <h4>⚽ Analisi Match: Cagliari vs. Sassuolo</h4>
+                        <p><strong>MATCH:</strong> Cagliari vs Sassuolo | <strong>COMPETIZIONE:</strong> Serie A | <strong>DATA:</strong> Giovedì 30 Ottobre</p>
+                        
+                        <h3>📊 Trend di Squadra</h3>
+                        <ul>
+                            <li>**Cagliari:** Aggressivo in casa, ma con un'alta media di gol subiti. Tende ad aprirsi per cercare la vittoria.</li>
+                            <li>**Sassuolo:** Storicamente squadra da "Over". Attacco dinamico ma fase difensiva spesso carente in trasferta.</li>
+                        </ul>
+
+                        <h3>🔑 Punti Chiave del Pronostico</h3>
+                        <ol>
+                            <li>**Vulnerabilità Difensive:** Entrambe le difese hanno mostrato lacune.</li>
+                            <li>**Necessità di Attacco:** La posizione in classifica spinge entrambe ad attaccare, favorendo un match aperto.</li>
+                            <li>**Quota Vantaggiosa:** La quota per l'Over 2.5 a 2.12 offre un ottimo rapporto rischio/ricompensa.</li>
+                        </ol>
+                        <a href="https://www.marathonbet.it/registrazione" class="cta-button" target="_blank" style="background-color: var(--secondary-color); color: white; margin-top: 10px;">
+                            Vedi tutte le Quote Serie A su Marathonbet
+                        </a>
+                    </div>
+                </details>
+            </article>
+
+            <article class="post">
+                <h3><span class="icon">⚽</span> Coppa Italia: Pisa vs. Lazio (La Prova del Nove)</h3>
+                <p>Nonostante si giochi in trasferta e in Coppa, la Lazio di Sarri deve dimostrare di aver superato il recente periodo di crisi. Il Pisa è una squadra ostica ma il gap tecnico è notevole. La quota per la vittoria secca della Lazio è alta e vale il rischio.</p>
+                <span class="tip-quote">🔥 Il Nostro Tip: **Vittoria Lazio (2) (Quota: 2.16)**</span>
+                <div class="quote-details">Quote 1X2: 3.75 (Pisa) | 3.12 (Pareggio) | 2.16 (Lazio)</div>
+                
+                <details>
+                    <summary>Analisi Completa e Statistiche</summary>
+                    <div class="analysis-body">
+                        <h4>⚽ Analisi Match: Pisa vs. Lazio</h4>
+                        <p><strong>MATCH:</strong> Pisa vs Lazio | <strong>COMPETIZIONE:</strong> Coppa Italia | <strong>DATA:</strong> Giovedì 30 Ottobre</p>
+                        
+                        <h3>📊 Valutazione del Gap Tecnico</h3>
+                        <ul>
+                            <li>**Lazio (Serie A):** Il divario di talento e rosa è enorme. La Lazio vede la Coppa come un obiettivo concreto per ritrovare fiducia.</li>
+                            <li>**Pisa (Serie B):** Squadra solida in B, ma difficilmente resisterà alla qualità dei singoli laziali per 90 minuti.</li>
+                        </ul>
+
+                        <h3>🔑 Punti Chiave del Pronostico</h3>
+                        <ol>
+                            <li>**Qualità della Rosa:** La profondità della rosa della Lazio è nettamente superiore.</li>
+                            <li>**Esigenza di Riscatto:** La Lazio ha bisogno di una vittoria convincente dopo le recenti prestazioni.</li>
+                            <li>**Quota Vantaggiosa:** 2.16 per la vittoria secca di una A contro una B è un ottimo valore.</li>
+                        </ol>
+                        <a href="https://www.marathonbet.it/registrazione" class="cta-button" target="_blank" style="background-color: var(--secondary-color); color: white; margin-top: 10px;">
+                            Vedi tutte le Quote Calcio su Marathonbet
+                        </a>
+                    </div>
+                </details>
+            </article>
+
+            <article class="post">
+                <h3><span class="icon">🌎</span> Sudamericana: Lanus vs. U. De Chile (Fattore Campo)</h3>
+                <p>Nelle competizioni CONMEBOL, il fattore campo è spesso decisivo. Il Lanus è solido in casa e ha l'esperienza necessaria. L'Universidad de Chile non ha un buon rendimento esterno.</p>
+                <span class="tip-quote">🔥 Il Nostro Tip: **Vittoria Atletico Lanus (1) (Quota: 1.76)**</span>
+                <div class="quote-details">Quote 1X2: 1.76 (Lanus) | 3.35 (Pareggio) | 4.60 (U. Chile)</div>
+                
+                <details>
+                    <summary>Analisi Completa e Statistiche</summary>
+                    <div class="analysis-body">
+                        <h4>🌎 Analisi Match: Lanus vs. U. De Chile</h4>
+                        <p><strong>MATCH:</strong> Lanus vs Universidad de Chile | <strong>COMPETIZIONE:</strong> Copa Sudamericana | <strong>DATA:</strong> Giovedì 30 Ottobre</p>
+                        
+                        <h3>📊 Il Fattore CONMEBOL</h3>
+                        <ul>
+                            <li>**Lanus (Argentina):** Forti tra le mura amiche nelle competizioni continentali. Esperienza e pubblico caldo.</li>
+                            <li>**U. De Chile (Cile):** Rendimento molto inferiore in trasferta, specialmente in Argentina, dove la pressione è alta.</li>
+                        </ul>
+
+                        <h3>🔑 Punti Chiave del Pronostico</h3>
+                        <ol>
+                            <li>**Vantaggio Casalingo:** Il fattore campo è spesso determinante in Sudamerica.</li>
+                            <li>**Solidità del Lanus:** La squadra argentina ha la maturità per gestire questi match a eliminazione.</li>
+                            <li>**Pronostico:** Vittoria secca del Lanus, che sfrutterà il proprio fortino.</li>
+                        </ol>
+                        <a href="https://www.marathonbet.it/registrazione" class="cta-button" target="_blank" style="background-color: var(--secondary-color); color: white; margin-top: 10px;">
+                            Vedi tutte le Quote Calcio su Marathonbet
+                        </a>
+                    </div>
+                </details>
+            </article>
+
+            <article class="post">
+                <h3><span class="icon">🇩🇰</span> Coppa Danimarca: Nordsjaelland vs. Brøndby (Derby di Coppa)</h3>
+                <p>Scontro tra due squadre orientate all'attacco. Entrambe giocano un calcio veloce e si espongono in difesa. La rivalità e la pressione favoriscono un match aperto con gol da entrambe le parti.</p>
+                <span class="tip-quote">🔥 Il Nostro Tip: **Goal/Goal (Quota: 1.52)**</span>
+                <div class="quote-details">Quote 1X2: 2.70 (Nordsj.) | 3.55 (Pareggio) | 2.29 (Brøndby)</div>
+                
+                <details>
+                    <summary>Analisi Completa e Statistiche</summary>
+                    <div class="analysis-body">
+                        <h4>🇩🇰 Analisi Match: Nordsjaelland vs. Brøndby</h4>
+                        <p><strong>MATCH:</strong> Nordsjaelland vs Brøndby | <strong>COMPETIZIONE:</strong> Coppa di Danimarca | <strong>DATA:</strong> Giovedì 30 Ottobre</p>
+                        
+                        <h3>📊 Stile di Gioco</h3>
+                        <ul>
+                            <li>**Nordsjaelland:** Squadra giovane e molto offensiva, crea molto ma si espone in difesa.</li>
+                            <li>**Brøndby:** Calcio aggressivo e diretto, la loro forza d'attacco è costante.</li>
+                        </ul>
+
+                        <h3>🔑 Punti Chiave del Pronostico</h3>
+                        <ol>
+                            <li>**Media Gol Alta:** Superligaen e gli scontri diretti sono notoriamente ricchi di gol.</li>
+                            <li>**Attacchi Forti:** Entrambi i reparti offensivi sono in forma.</li>
+                            <li>**Difese Aperte:** In una partita da dentro o fuori, entrambe sono propense a rischiare.</li>
+                        </ol>
+                        <a href="https://www.marathonbet.it/registrazione" class="cta-button" target="_blank" style="background-color: var(--secondary-color); color: white; margin-top: 10px;">
+                            Vedi tutte le Quote Calcio su Marathonbet
+                        </a>
+                    </div>
+                </details>
+            </article>
+
+            <article class="post">
+                <h3><span class="icon">🇨🇭</span> Superliga: Grasshoppers vs. Young Boys (Tendenza Over)</h3>
+                <p>Il Young Boys è la squadra più prolifica del campionato svizzero, ma subisce spesso in trasferta. Il Grasshoppers è efficace in casa. La media gol in Svizzera è alta, rendendo l'Over 2.5 la scelta più sicura.</p>
+                <span class="tip-quote">🔥 Il Nostro Tip: **Over 2.5 Goal (Quota: 1.60)**</span>
+                <div class="quote-details">Quote 1X2: 3.35 (Grassh.) | 3.70 (Pareggio) | 1.96 (Y. Boys)</div>
+                
+                <details>
+                    <summary>Analisi Completa e Statistiche</summary>
+                    <div class="analysis-body">
+                        <h4>🇨🇭 Analisi Match: Grasshoppers vs. Young Boys</h4>
+                        <p><strong>MATCH:</strong> Grasshoppers vs Young Boys | <strong>COMPETIZIONE:</strong> Superliga Svizzera | <strong>DATA:</strong> Giovedì 30 Ottobre</p>
+                        
+                        <h3>📊 Trend di Campionato</h3>
+                        <ul>
+                            <li>**Young Boys:** Squadra più forte e prolifica in Svizzera. Capace di coprire l'Over 2.5 da sola.</li>
+                            <li>**Grasshoppers:** Efficace in fase offensiva in casa, sfruttando il contropiede.</li>
+                        </ul>
+
+                        <h3>🔑 Punti Chiave del Pronostico</h3>
+                        <ol>
+                            <li>**Natura del Campionato:** L'Over 2.5 è un esito comune in Superliga.</li>
+                            <li>**Potenza Offensiva YB:** La squadra ospite ha una media gol altissima.</li>
+                            <li>**Pronostico:** L'Over 2.5 è la giocata più sensata per questo incontro.</li>
+                        </ol>
+                        <a href="https://www.marathonbet.it/registrazione" class="cta-button" target="_blank" style="background-color: var(--secondary-color); color: white; margin-top: 10px;">
+                            Vedi tutte le Quote Calcio su Marathonbet
+                        </a>
+                    </div>
+                </details>
+            </article>
+
+            <article class="post">
+                <h3><span class="icon">🇧🇪</span> Coppa Belgio: Beerschot vs. Westerlo (Sfida da Gol)</h3>
+                <p>Il calcio belga, specialmente nelle coppe, è famoso per le sue partite aperte. Entrambe le squadre segneranno, superando i 2.5 gol totali.</p>
+                <span class="tip-quote">🔥 Il Nostro Tip: **Goal/Goal e Over 2.5 (Quota: 1.51)**</span>
+                <div class="quote-details">Quote 1X2: 3.45 (Beerschot) | 3.60 (Pareggio) | 1.82 (Westerlo)</div>
+                
+                <details>
+                    <summary>Analisi Completa e Statistiche</summary>
+                    <div class="analysis-body">
+                        <h4>🇧🇪 Analisi Match: Beerschot vs. Westerlo</h4>
+                        <p><strong>MATCH:</strong> Beerschot vs Westerlo | <strong>COMPETIZIONE:</strong> Coppa del Belgio | <strong>DATA:</strong> Giovedì 30 Ottobre</p>
+                        
+                        <h3>📊 Stile di Gioco Belga</h3>
+                        <ul>
+                            <li>**Westerlo (Pro League):** Attacco discreto, ma difesa che spesso concede in trasferta.</li>
+                            <li>**Beerschot (2^ Serie):** Gioca in casa con la spinta per eliminare una squadra della massima serie. Cercherà il gol.</li>
+                        </ul>
+
+                        <h3>🔑 Punti Chiave del Pronostico</h3>
+                        <ol>
+                            <li>**Goal in Entrambe le Porte:** La mentalità offensiva belga favorisce il Goal/Goal.</li>
+                            <li>**Alta Probabilità di 3 o più gol:** Una volta sbloccato il risultato, il match si aprirà.</li>
+                            <li>**Motivazione Casalinga:** Il Beerschot ha le capacità di segnare almeno un gol.</li>
+                        </ol>
+                        <a href="https://www.marathonbet.it/registrazione" class="cta-button" target="_blank" style="background-color: var(--secondary-color); color: white; margin-top: 10px;">
+                            Vedi tutte le Quote Calcio su Marathonbet
+                        </a>
+                    </div>
+                </details>
+            </article>
+
+            <article class="post">
+                <h3><span class="icon">🟢⚫</span> Coppa Belgio: Cercle Brugge vs. Kortrijk (Cercle Fav.)</h3>
+                <p>Il Cercle Brugge ha dimostrato una maggiore solidità e organizzazione rispetto al Kortrijk. Giocando in casa, hanno il vantaggio di poter controllare il ritmo della partita. Il Kortrijk è in un momento di difficoltà.</p>
+                <span class="tip-quote">🔥 Il Nostro Tip: **Vittoria Cercle Brugge (1) (Quota: 1.67)**</span>
+                <div class="quote-details">Quote 1X2: 1.67 (Cercle B.) | 3.60 (Pareggio) | 4.10 (Kortrijk)</div>
+                
+                <details>
+                    <summary>Analisi Completa e Statistiche</summary>
+                    <div class="analysis-body">
+                        <h4>🇧🇪 Analisi Match: Cercle Brugge vs. Kortrijk</h4>
+                        <p><strong>MATCH:</strong> Cercle Brugge vs Kortrijk | <strong>COMPETIZIONE:</strong> Coppa del Belgio | <strong>DATA:</strong> Giovedì 30 Ottobre</p>
+                        
+                        <h3>📊 Stato di Forma e Vantaggio Casa</h3>
+                        <ul>
+                            <li>**Cercle Brugge:** Maggiore solidità tattica e migliore organizzazione, soprattutto in casa.</li>
+                            <li>**Kortrijk:** In un momento difficile. La difesa è fragile e il rendimento in trasferta cala drasticamente.</li>
+                        </ul>
+
+                        <h3>🔑 Punti Chiave del Pronostico</h3>
+                        <ol>
+                            <li>**Crisi Kortrijk:** Non hanno le armi per superare una squadra più solida come il Cercle.</li>
+                            <li>**Vantaggio Casa:** Il Cercle Brugge è forte e pressante davanti al proprio pubblico.</li>
+                            <li>**Pronostico:** Vittoria nei 90 minuti del Cercle Brugge.</li>
+                        </ol>
+                        <a href="https://www.marathonbet.it/registrazione" class="cta-button" target="_blank" style="background-color: var(--secondary-color); color: white; margin-top: 10px;">
+                            Vedi tutte le Quote Calcio su Marathonbet
+                        </a>
+                    </div>
+                </details>
+            </article>
+            
         </section>
         
         <section id="casino" class="content-section casino-section">
@@ -361,64 +607,4 @@
             <h2>🏆 I Bonus di Benvenuto Ufficiali Marathonbet.it</h2>
             <p>Scegli l'offerta che fa per te! Entrambi i bonus sono validi per i nuovi utenti con conto convalidato (invio documento).</p>
 
-            <div class="bonus-card-grid">
-                <div class="bonus-card bonus-sport">
-                    <h3>BONUS SPORT: Fino a 350€!</h3>
-                    <p>Il bonus si divide in Fun Bonus sul primo deposito e Cashback settimanale.</p>
-                    <ul>
-                        <li>**100% Fun Bonus fino a 100€:** sul 1° deposito (min. 10€).</li>
-                        <li>**Cashback fino a 250€:** 25% della spesa settimanale (max 50€/settimana per 5 settimane).</li>
-                        <li>**Requisito Fun Bonus:** Giocare 5x su Multiple con min. 4 eventi (quota singola 1.40+).</li>
-                    </ul>
-                    <a href="https://www.marathonbet.it/promotions" class="cta-bonus" target="_blank">ATTIVA IL BONUS SPORT</a>
-                </div>
-
-                <div class="bonus-card bonus-casino-main">
-                    <h3>BONUS CASINÒ: Fino a 2000€!</h3>
-                    <p>Il bonus è erogato come Real Bonus progressivo sulle slot selezionate.</p>
-                    <ul>
-                        <li>**100% Real Bonus fino a 2000€:** sul primo deposito.</li>
-                        <li>**Sblocco:** Rilasciato progressivamente (es. 10€ di Real Bonus ogni 450€ giocati).</li>
-                        <li>**Codice Promo:** Spesso richiesto in fase di deposito (WCASINO***).</li>
-                    </ul>
-                    <a href="https://www.marathonbet.it/promotions" class="cta-bonus" target="_blank">ATTIVA IL BONUS CASINÒ</a>
-                </div>
-            </div>
-            
-        </section>
-
-        <section id="recensione" class="content-section review">
-            <h2>🥇 Perchè Scegliere Marathonbet (Licenza ADM 15002)</h2>
-            <p>Affidabilità storica e un'offerta imbattibile sia per lo sport che per i giochi da casinò online.</p>
-            <div class="features">
-                <div><span class="icon">✅</span> Licenza ADM 15002 (Massima sicurezza)</div>
-                <div><span class="icon">📈</span> Quote Sportive al Top del Mercato</div>
-                <div><span class="icon">🎰</span> Oltre 2000 Slot, tavoli Live e Crash Games</div>
-                <div><span class="icon">📞</span> Assistenza Clienti 24/7 (Live Chat e Telefono)</div>
-            </div>
-            <a href="PAGINA_RECENSIONE_COMPLETA.html" class="link-dettagli">🔎 Leggi la nostra Recensione Completa e Dettagliata</a>
-        </section>
-        
-        <div class="banner-simulato banner-legal">
-            <div class="promo-text">✅ SICUREZZA GARANTITA: MARATHONBET È LEGALE E CON LICENZA ADM</div>
-            <div class="sub-text">Tranquillità nel gioco e transazioni protette.</div>
-        </div>
-
-    </main>
-
-    <footer>
-        <div class="legal-info">
-            <p>⚠️ **GIOCA RESPONSABILMENTE: Il gioco è vietato ai minori di 18 anni e può causare dipendenza patologica.**</p>
-            <p>Se hai problemi con il gioco, contatta il numero verde gratuito 800.558.822.</p>
-            <p>Questo sito è un affiliato promozionale e non è l'operatore di gioco. I servizi sono offerti da Marathonbet.it (Licenza ADM 15002).</p>
-        </div>
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a> |
-            <a href="#">Contatti</a> |
-            <a href="#">Termini e Condizioni</a>
-        </div>
-        <p>&copy; 2025 MarathonTip. Tutti i diritti riservati.</p>
-    </footer>
-
-</body>
-</html>
+            <div class
